@@ -1,0 +1,116 @@
+defaults:                 # This is a placeholder configuration file for overfitting on a small dataset.
+  - dataset: [llff]
+  - frame_sampler: overfit
+  - flow: raft
+  - tracking: cotracker
+  - model/backbone: midas
+  - model/intrinsics: softmin
+  - model/extrinsics: procrustes
+  - loss: [flow, tracking]
+  - visualizer: [summary, trajectory]
+  - _self_
+
+wandb:
+  project: flowmap
+  mode: disabled
+  name: placeholder
+  group: null
+  tags: null
+
+checkpoint:
+  every_n_train_steps: 2000                 # 2000
+  load: checkpoints/initialization_finetuned.ckpt
+
+trainer:
+  val_check_interval: 50
+  max_steps: 30000       # 2000
+
+  # 在此添加opt优化器的参数配置
+  iterations: 30000
+  position_lr_init: 0.0016
+  position_lr_final: 0.0000016
+  position_lr_delay_mult: 0.01
+  position_lr_max_steps: 30000
+  feature_lr: 0.0025
+  opacity_lr: 0.05
+  scaling_lr: 0.001
+  rotation_lr: 0.001
+  percent_dense: 0.01
+  lambda_dssim: 0.2
+  densification_interval: 100
+  opacity_reset_interval: 3000
+  densify_from_iter: 500
+  densify_until_iter: 15000
+  densify_grad_threshold: 0.0002
+  random_background: False
+
+  # 在此添加model模型的参数配置
+  sh_degree: 3                  # or  3?
+  source_path: ""
+  model_path: ""
+  resolution: -1
+  white_background: False
+  data_device: "cuda"
+
+  # 在此添加pipeline管道的参数配置
+  convert_SHs_python: False
+  compute_cov3D_python: False
+
+
+model_wrapper:
+  patch_size: 32
+  lr: 3e-5
+  num_vis_frames: 8
+
+cropping:
+  # This can either be an exact shape like [180, 240] or an approximate number of
+  # pixels. The default is as many pixels as 180*240.
+  image_shape: 43200
+  flow_scale_multiplier: 4
+  patch_size: 32
+
+track_precomputation:
+  interval: 5
+  radius: 20
+
+  # Caching tracks is kind of a foot gun, so we only do so for development.
+  cache_path: null
+
+model:
+  use_correspondence_weights: true
+
+# In addition to being uploaded to wandb, the outputs are saved here.
+local_save_root: null
+ate_save_root: null
+
+# opt_params:
+#   iterations: 30000
+#   position_lr_init: 0.0016
+#   position_lr_final: 0.0000016
+#   position_lr_delay_mult: 0.01
+#   position_lr_max_steps: 30000
+#   feature_lr: 0.0025
+#   opacity_lr: 0.05
+#   scaling_lr: 0.001
+#   rotation_lr: 0.001
+#   percent_dense: 0.01
+#   lambda_dssim: 0.2
+#   densification_interval: 100
+#   opacity_reset_interval: 3000
+#   densify_from_iter: 500
+#   densify_until_iter: 15000
+#   densify_grad_threshold: 0.0002
+  # random_background: False
+
+
+model_params:
+  sh_degree: 0                  # or  3?
+  source_path: ""
+  model_path: ""
+  resolution: -1
+  white_background: False
+  data_device: "cuda"
+
+pipeline_params:
+  convert_SHs_python: False
+  compute_cov3D_python: False

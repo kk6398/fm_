@@ -1,0 +1,10 @@
+llff:
+  # Common configuration items (all datasets have these)
+  scene: null
+  image_shape: null
+  name: images
+
+  # Dataset-specific configuration items
+#  root: /data2/hkk/datasets/flowmap/llff_fern
+  root: /data2/hkk/3dgs/flowmap/data/llff_fern
+#  root: D:\git\flowmap\data\llff_fern

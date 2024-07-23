@@ -1,0 +1,10 @@
+images:
+  # Common configuration items (all datasets have these)
+  scene: null
+  image_shape: null
+
+  # Dataset-specific configuration items
+  # root: datasets/captures/birds
+#  root: /data2/hkk/3dgs/flowmap/data/llff_fern
+  root: /data2/hkk/3dgs/flowmap/data/llff_fern
+#inherit_from: "/data2/hkk/3dgs/flowmap/flowmap/config/llff_fern/base_config.yaml"
