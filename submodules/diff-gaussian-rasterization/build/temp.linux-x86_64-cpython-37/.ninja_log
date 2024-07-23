@@ -1,0 +1,11 @@
+# ninja log v5
+1	13763	1709736431677237648	/data2/hkk/gaussian-splatting/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-37/ext.o	bd7aec9f3cae4377
+2	39712	1709736457633417898	/data2/hkk/gaussian-splatting/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-37/rasterize_points.o	c5c9432ef94abd56
+8	1306	1709779781443567014	/data2/hkk/gaussian-splatting/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-37/cuda_rasterizer/forward.o	609df89ec71887e
+8	1414	1709779781551567408	/data2/hkk/gaussian-splatting/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-37/cuda_rasterizer/backward.o	d53e5f2308063287
+9	5828	1709779785959583526	/data2/hkk/gaussian-splatting/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-37/cuda_rasterizer/rasterizer_impl.o	b2f6907db40bf5ca
+9	1297	1709780678567647752	/data2/hkk/gaussian-splatting/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-37/cuda_rasterizer/forward.o	199d3eb56d88f7
+8	1422	1709780678695648328	/data2/hkk/gaussian-splatting/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-37/cuda_rasterizer/backward.o	6e67ec97555d65d3
+9	5899	1709780683163668407	/data2/hkk/gaussian-splatting/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-37/cuda_rasterizer/rasterizer_impl.o	aa4bb458fa8e242d
+10	13821	1709780691071703927	/data2/hkk/gaussian-splatting/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-37/ext.o	34473350877b57fd
+10	39171	1709780716431817685	/data2/hkk/gaussian-splatting/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-37/rasterize_points.o	d2f990be958be4b8

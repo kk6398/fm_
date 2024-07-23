@@ -1,0 +1,6 @@
+# ninja log v5
+0	2898	1718868821885408818	/data2/hkk/3dgs/flowmap/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-311/cuda_rasterizer/forward.o	c2742016bc8ee408
+0	2956	1718868821941408512	/data2/hkk/3dgs/flowmap/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-311/cuda_rasterizer/backward.o	99d6cdb8afd34b65
+0	9896	1718868828873371181	/data2/hkk/3dgs/flowmap/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-311/cuda_rasterizer/rasterizer_impl.o	e5632499a04d5166
+1	15390	1718868834353342389	/data2/hkk/3dgs/flowmap/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-311/ext.o	73b0af363fa1394d
+1	45682	1718868864629194429	/data2/hkk/3dgs/flowmap/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-311/rasterize_points.o	b0a6bf11314ebf48
